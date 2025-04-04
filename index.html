@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lịch Thi Đấu</title>
+    <title>Tra cứu tương tác thuốc chống chỉ định</title>
     <link rel="stylesheet" href="style.css">
     <style>
         body {
@@ -31,24 +31,24 @@
     </style>
 </head>
 <body>
-    <h1>Danh Sách Lịch Thi Đấu</h1>
-    <p>Nhập tên đội bóng để chọn và xem thông tin:</p>
+    <h1>TƯƠNG TÁC THUỐC CHỐNG CHỈ ĐỊNH</h1>
+    <p>Nhập tên hoạt chất để tra cứu:</p>
 
     <!-- Dropdown gợi ý -->
     <div class="dropdown-container">
-        <input type="text" id="team-input" placeholder="Nhập tên đội bóng...">
+        <input type="text" id="team-input" placeholder="Nhập tên hoạt chất...">
         <div id="suggestions" style="border: 1px solid #ccc; max-height: 150px; overflow-y: auto; display: none;"></div>
     </div>
 
     <!-- Kết quả hiển thị -->
     <div class="results">
-        <h2>Các trận đấu giữa các đội đã chọn:</h2>
+        <h2>Các tương tác thuốc chống chỉ định giữa các hoạt chất đã chọn:</h2>
         <ul id="match-results"></ul>
     </div>
 
-    <!-- Phần hiển thị danh sách các đội đã chọn -->
+    <!-- Phần hiển thị danh sách các hoạt chất đã chọn -->
     <div class="selected-teams">
-        <h2>Các đội đã chọn:</h2>
+        <h2>Các hoạt chất đã chọn:</h2>
         <ul id="selected-teams-list"></ul>
     </div>
 
