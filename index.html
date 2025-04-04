@@ -3,72 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danh sách tương tác thuốc</title>
+    <title>Lịch Thi Đấu</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
-            background-color: #f9f9f9;
-            color: #333;
         }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        .dropdown-container {
+            margin-bottom: 20px;
         }
-
-        h1 {
-            text-align: center;
-            color: #1877F2;
+        input {
+            width: 300px;
+            padding: 10px;
+            margin-bottom: 10px;
         }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
+        .results, .selected-teams {
             margin-top: 20px;
         }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: left;
+        ul {
+            list-style-type: none;
+            padding: 0;
         }
-
-        th {
-            background-color: #1877F2;
-            color: white;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-
-        tr:hover {
-            background-color: #e7f3ff;
+        li {
+            margin-bottom: 5px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Danh sách tương tác thuốc</h1>
-        <table id="interaction-table">
-            <thead>
-                <tr>
-                    <th>STT</th>
-                    <th>Hoạt chất 1</th>
-                    <th>Hoạt chất 2</th>
-                    <th>Cơ chế</th>
-                    <th>Hậu quả</th>
-                    <th>Xử trí</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
+    <h1>Danh Sách Lịch Thi Đấu</h1>
+    <p>Nhập tên đội bóng để chọn và xem thông tin:</p>
+
+    <!-- Dropdown gợi ý -->
+    <div class="dropdown-container">
+        <input type="text" id="team-input" placeholder="Nhập tên đội bóng...">
+        <div id="suggestions" style="border: 1px solid #ccc; max-height: 150px; overflow-y: auto; display: none;"></div>
     </div>
+    
+    <!-- Phần hiển thị danh sách các đội đã chọn -->
+    <div class="selected-teams">
+        <h2>Các đội đã chọn:</h2>
+        <ul id="selected-teams-list"></ul>
+    </div>
+
+    <!-- Kết quả hiển thị -->
+    <div class="results">
+        <h2>Các trận đấu giữa các đội đã chọn:</h2>
+        <ul id="match-results"></ul>
+    </div>
+
 
     <script src="script.js"></script>
 </body>
