@@ -1,7 +1,7 @@
 // Hàm đọc dữ liệu từ file matches.txt
 async function loadMatches() {
     try {
-        const response = await fetch("matches.txt"); // Đọc file matches.txt
+        const response = await fetch("https://buidathieu.github.io/kiemtradonthuoc/matches.txt"); // Đọc file matches.txt
         const jsonData = await response.json(); // Chuyển đổi nội dung file thành JSON
 
         const matches = jsonData.Data; // Lấy danh sách trận đấu từ JSON
