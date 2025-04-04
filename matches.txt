@@ -1,0 +1,21 @@
+{
+  "aaData": [
+    {
+      "STT": 1,
+      "Hoạt chất 1": "Aceclofenac",
+      "Hoạt chất 2": "Ketorolac",
+      "Cơ chế": "Hiệp đồng tác dụng kích ứng đường tiêu hóa",
+      "Hậu quả": "Tăng nguy cơ xuất huyết tiêu hóa nghiêm trọng",
+      "Xử trí": "Chống chỉ định phối hợp. Cần đặc biệt lưu ý nguy cơ tương tác trong trường hợp giảm đau hậu phẫu."
+    },
+    {
+      "STT": 2,
+      "Hoạt chất 1": "Acenocoumarol",
+      "Hoạt chất 2": "Tamoxifen",
+      "Cơ chế": "Tamoxifen ức chế CYP2C9 làm giảm chuyển hóa của acenocoumarol",
+      "Hậu quả": "Tăng nguy cơ xuất huyết",
+      "Xử trí": "Chống chỉ định phối hợp ở bệnh nhân sử dụng tamoxifen dự phòng tiên phát ung thư vú."
+    }
+    // Các phần tử khác...
+  ]
+}
