@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tra cứu tương tác thuốc chống chỉ định</title>
+    <title>Tra cứu tương tác vắc xin</title>
     <link rel="stylesheet" href="style.css">
     <style>
         body {
@@ -31,25 +31,23 @@
     </style>
 </head>
 <body>
-    <h1>TƯƠNG TÁC THUỐC CHỐNG CHỈ ĐỊNH</h1>
-    <p>Nhập tên hoạt chất để tra cứu:</p>
+    <h1>TƯƠNG TÁC VẮC XIN</h1>
+    <p>Nhập tên vắc xin để tra cứu:</p>
 
     <!-- Dropdown gợi ý -->
     <div class="dropdown-container">
-        <input type="text" id="team-input" placeholder="Nhập tên hoạt chất...">
+        <input type="text" id="team-input" placeholder="Nhập tên vắc xin...">
         <div id="suggestions" style="border: 1px solid #ccc; max-height: 150px; overflow-y: auto; display: none;"></div>
     </div>
-
-    <!-- Kết quả hiển thị -->
-    <div class="results">
-        <h2>Các tương tác thuốc chống chỉ định giữa các hoạt chất đã chọn:</h2>
-        <ul id="match-results"></ul>
-    </div>
-
     <!-- Phần hiển thị danh sách các hoạt chất đã chọn -->
     <div class="selected-teams">
-        <h2>Các hoạt chất đã chọn:</h2>
+        <h2>Các vắc xin đã chọn:</h2>
         <ul id="selected-teams-list"></ul>
+    </div>
+    <!-- Kết quả hiển thị -->
+    <div class="results">
+        <h2>Các tương tác giữa các vắc xin đã chọn:</h2>
+        <ul id="match-results"></ul>
     </div>
 
     <script src="script.js"></script>
