@@ -203,6 +203,6 @@ function updateMatches() {
             matchResults.appendChild(listItem);
         });
     } else {
-        matchResults.innerHTML = "<li>Không có trận đấu nào giữa các đội đã chọn.</li>";
+        matchResults.innerHTML = "<li>Không có tương tác nào giữa các vắc xin đã chọn.</li>";
     }
 }
