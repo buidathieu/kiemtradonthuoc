@@ -86,7 +86,35 @@ const matches = [
     { vax1: "Moderna", vax2: "Pfizer", tuongtac: "Có thể phối hợp trong lịch tiêm chủng COVID-19 theo hướng dẫn Bộ Y tế." },
 
     // Sốt xuất huyết
-    { vax1: "Qdenga", vax2: "MMR", tuongtac: "Có thể tiêm đồng thời ở các vị trí khác nhau." }
+    { vax1: "Qdenga", vax2: "MMR", tuongtac: "Có thể tiêm đồng thời ở các vị trí khác nhau." },
+    // OPV và Rotavin
+    {
+        vax1: "OPV",
+        vax2: "Rotavin",
+        tuongtac: "Có thể uống đồng thời trong cùng buổi tiêm chủng."
+    },
+    // OPV và Rotarix/Rotateq
+    {
+        vax1: "OPV",
+        vax2: "Rotarix",
+        tuongtac: "Có thể uống đồng thời trong cùng buổi tiêm chủng."
+    },
+    {
+        vax1: "OPV",
+        vax2: "Rotateq",
+        tuongtac: "Có thể uống đồng thời trong cùng buổi tiêm chủng."
+    },
+    // Rotavin và Rotarix/Rotateq
+    {
+        vax1: "Rotavin",
+        vax2: "Rotarix",
+        tuongtac: "Không nên uống đồng thời; chỉ chọn một loại vắc xin rota cho mỗi trẻ."
+    },
+    {
+        vax1: "Rotavin",
+        vax2: "Rotateq",
+        tuongtac: "Không nên uống đồng thời; chỉ chọn một loại vắc xin rota cho mỗi trẻ."
+    }
 ];
 
 
