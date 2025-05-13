@@ -171,7 +171,7 @@ function updateMatches() {
     if (relatedMatches.length > 0) {
         relatedMatches.forEach(match => {
             const listItem = document.createElement("li");
-            listItem.textContent = `${match.vax1} vs ${match.vax2} - Thời gian: ${match.tuongtac}`;
+            listItem.textContent = `${match.vax1} vs ${match.vax2}: ${match.tuongtac}`;
             matchResults.appendChild(listItem);
         });
     } else {
