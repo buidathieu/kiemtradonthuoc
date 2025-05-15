@@ -168,11 +168,10 @@ input.addEventListener("input", () => {
 // Cập nhật danh sách các đội đã chọn
 function updateSelectedTeams() {
     selectedTeamsList.innerHTML = "";
-    
-    selectedTeams.forEach(team, idx) => {
+
+    selectedTeams.forEach((team, idx) => {
         const listItem = document.createElement("li");
-        listItem.innerHTML = `${idx + 1}`;
-        listItem.textContent = team;
+        listItem.textContent = `${idx + 1}. ${team}`;
 
         // Nút xóa đội khỏi danh sách
         const removeButton = document.createElement("button");
@@ -186,7 +185,7 @@ function updateSelectedTeams() {
 
         listItem.appendChild(removeButton);
         selectedTeamsList.appendChild(listItem);
-    };
+    });
 }
 
 // Cập nhật danh sách các trận đấu liên quan
