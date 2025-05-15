@@ -142,9 +142,10 @@ input.addEventListener("input", () => {
 
     const filteredTeams = teams.filter(team => team.toLowerCase().includes(value));
     
-    filteredTeams.forEach(team => {
+    filteredTeams.forEach(team, idx) => {
         const suggestionItem = document.createElement("div");
         suggestionItem.textContent = team;
+        suggestionItem.innerHTML = `<span class="suggestion-index">${idx + 1}</span>${team}`;
         suggestionItem.style.padding = "10px";
         suggestionItem.style.cursor = "pointer";
 
