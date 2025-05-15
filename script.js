@@ -142,10 +142,9 @@ input.addEventListener("input", () => {
 
     const filteredTeams = teams.filter(team => team.toLowerCase().includes(value));
     
-    filteredTeams.forEach(team, idx) => {
+    filteredTeams.forEach(team => {
         const suggestionItem = document.createElement("div");
         suggestionItem.textContent = team;
-        suggestionItem.innerHTML = `<span class="suggestion-index">${idx + 1}</span>${team}`;
         suggestionItem.style.padding = "10px";
         suggestionItem.style.cursor = "pointer";
 
@@ -170,8 +169,9 @@ input.addEventListener("input", () => {
 function updateSelectedTeams() {
     selectedTeamsList.innerHTML = "";
     
-    selectedTeams.forEach(team => {
+    selectedTeams.forEach(team, idx) => {
         const listItem = document.createElement("li");
+        listItem.innerHTML = `${idx + 1}`;
         listItem.textContent = team;
 
         // Nút xóa đội khỏi danh sách
@@ -186,7 +186,7 @@ function updateSelectedTeams() {
 
         listItem.appendChild(removeButton);
         selectedTeamsList.appendChild(listItem);
-    });
+    };
 }
 
 // Cập nhật danh sách các trận đấu liên quan
